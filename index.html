@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="divParent">
+      <div class="edit" id="editContent">
+        <a href="#" title="Жирний текст" data-role='bold'><b>B</b></a>
+        <a href="#" title="Курсивний текст" data-role='italic'><i>I</i></a>
+        <a href="#" title="Підкреслений текст" data-role='underline'><u>U</u></a>
+        <a href="#" title="Закреслений текст" data-role='strike'><strike>abc</strike></a>
+        <a href="#" class="asda" title="Вернути до ззаду" data-role='return'>T</a>
+      </div>
+      <div class="edit" id="editContents">
+        <a href="#" title="Текст наліво" data-role='left'><img src="img/left.svg" alt="Текст наліво"></a>
+        <a href="#" title="Текст на центр" data-role='center'><img src="img/center.svg" alt="Текст на центр"></a>
+        <a href="#" title="Текст направо" data-role='right'><img src="img/right.svg" alt="Текст направо"></a>
+        <a href="#" title="Текст на всю ширину" data-role='full'><img src="img/full.svg" alt="Текст на всю ширину"></a>
+      </div>
+      <div class="edit" id="editContent">
+        <a href="#" title="Заговолок 1-го порядку" data-role='h1'>h1</a>
+        <a href="#" title="Заговолок 2-го порядку" data-role='h2'>h2</a>
+        <a href="#" title="Заговолок 3-го порядку" data-role='h3'>h3</a>
+        <a href="#" title="Звичайний текст" data-role='p'>p</a>
+      </div>
+      <div class='btn-group' id="editContent">
+        <a class='btn' data-role='switchEditor' href='#' title='Перейти в редактор коду'>&lt;code&gt;</a>
+      </div>
+    </div>
+    <div class="editor" style="" contenteditable></div>
+    <textarea id="code"></textarea>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
