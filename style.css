@@ -45,11 +45,13 @@ a:hover {
   border-radius: 15px;
 }
 
-#code {
+.editor {
+  border: 2px solid #000;
+  border-radius: 10px;
   width: 100%;
   min-height: 200px;
-  resize: vertical;
-  overflow: auto;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 .bold {

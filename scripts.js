@@ -35,17 +35,6 @@ buttons.forEach((btn, index) => {
       case 8:
         editor.style.fontSize = 16 + "px"
         break
-      case 9:
-        if(getComputedStyle(code).display == "none"){
-          code.style.display = "block"
-          editor.style.display = "none"
-          code.value = editor.innerHTML.trim()
-        } else {
-          code.style.display = "none"
-          editor.style.display = "block"
-          editor.innerHTML = code.value
-        }
-        break
     }
     // switch(this.getAttribute("data-role")) {
     //   case "switchEditor":
